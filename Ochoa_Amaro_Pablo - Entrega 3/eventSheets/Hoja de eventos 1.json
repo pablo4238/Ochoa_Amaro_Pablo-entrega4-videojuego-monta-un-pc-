@@ -2,16 +2,6 @@
 	"name": "Hoja de eventos 1",
 	"events": [
 		{
-			"eventType": "variable",
-			"name": "Aciertos",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 773679183904480
-		},
-		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -44,18 +34,44 @@
 					}
 				},
 				{
-					"id": "add-to-eventvar",
-					"objectClass": "System",
-					"sid": 377093980558730,
+					"id": "set-progress",
+					"objectClass": "BarraDeProgreso",
+					"sid": 219229460952784,
 					"parameters": {
-						"variable": "Aciertos",
-						"value": "1"
+						"value": "BarraDeProgreso.Count"
 					}
 				},
 				{
-					"id": "stop-loop",
-					"objectClass": "System",
-					"sid": 727223736754235
+					"id": "set-visible",
+					"objectClass": "Texto7",
+					"sid": 241676246780966,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite9",
+					"sid": 325171871414422,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Texto8",
+					"sid": 605965801426676,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite10",
+					"sid": 827947135674117,
+					"parameters": {
+						"visibility": "visible"
+					}
 				}
 			],
 			"sid": 522079536797941
@@ -95,9 +111,9 @@
 				{
 					"id": "set-progress",
 					"objectClass": "BarraDeProgreso",
-					"sid": 531188260735186,
+					"sid": 233930426693429,
 					"parameters": {
-						"value": "1"
+						"value": "BarraDeProgreso.Progress+1"
 					}
 				}
 			],
@@ -134,6 +150,14 @@
 					"parameters": {
 						"state": "disabled"
 					}
+				},
+				{
+					"id": "set-progress",
+					"objectClass": "BarraDeProgreso",
+					"sid": 658185745880313,
+					"parameters": {
+						"value": "BarraDeProgreso.Progress+1"
+					}
 				}
 			],
 			"sid": 528697086859503
@@ -168,6 +192,14 @@
 					"behaviorType": "Ancla",
 					"parameters": {
 						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-progress",
+					"objectClass": "BarraDeProgreso",
+					"sid": 177754020394893,
+					"parameters": {
+						"value": "BarraDeProgreso.Progress+1"
 					}
 				}
 			],
@@ -204,6 +236,14 @@
 					"parameters": {
 						"state": "disabled"
 					}
+				},
+				{
+					"id": "set-progress",
+					"objectClass": "BarraDeProgreso",
+					"sid": 960707325700098,
+					"parameters": {
+						"value": "BarraDeProgreso.Progress+1"
+					}
 				}
 			],
 			"sid": 437203293384184
@@ -239,9 +279,23 @@
 					"parameters": {
 						"state": "disabled"
 					}
+				},
+				{
+					"id": "set-progress",
+					"objectClass": "BarraDeProgreso",
+					"sid": 550395411429358,
+					"parameters": {
+						"value": "BarraDeProgreso.Progress+1"
+					}
 				}
 			],
 			"sid": 728003839530689
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 754604209145393
 		},
 		{
 			"eventType": "block",
@@ -309,20 +363,20 @@
 				{
 					"id": "on-created",
 					"objectClass": "Sprite4",
-					"sid": 798411711964357
+					"sid": 751593222561106
 				}
 			],
 			"actions": [
 				{
 					"id": "set-visible",
 					"objectClass": "Sprite4",
-					"sid": 659982771888536,
+					"sid": 846049499065500,
 					"parameters": {
 						"visibility": "invisible"
 					}
 				}
 			],
-			"sid": 452750365933781
+			"sid": 486822648945351
 		},
 		{
 			"eventType": "block",
@@ -330,7 +384,7 @@
 				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "Sprite4",
-					"sid": 892987032487509,
+					"sid": 510797761092587,
 					"parameters": {
 						"object": "procesador"
 					}
@@ -340,7 +394,7 @@
 				{
 					"id": "set-enabled",
 					"objectClass": "procesador",
-					"sid": 169879789124613,
+					"sid": 990393793493054,
 					"behaviorType": "Ancla",
 					"parameters": {
 						"state": "enabled"
@@ -349,19 +403,19 @@
 				{
 					"id": "pin-to-object-imagepoint",
 					"objectClass": "procesador",
-					"sid": 345919984596658,
+					"sid": 493450149834356,
 					"behaviorType": "Pegado",
 					"parameters": {
 						"pin-to": "Sprite4",
 						"image-point": "0",
-						"angle": false,
+						"angle": true,
 						"width-type": "no",
 						"height-type": "no",
 						"z": false
 					}
 				}
 			],
-			"sid": 797614112167983
+			"sid": 322664736256716
 		},
 		{
 			"eventType": "block",
@@ -369,20 +423,20 @@
 				{
 					"id": "on-created",
 					"objectClass": "Sprite5",
-					"sid": 161543522324668
+					"sid": 241291882714309
 				}
 			],
 			"actions": [
 				{
 					"id": "set-visible",
 					"objectClass": "Sprite5",
-					"sid": 216413350521892,
+					"sid": 137925414335122,
 					"parameters": {
 						"visibility": "invisible"
 					}
 				}
 			],
-			"sid": 980886123882962
+			"sid": 450192268817665
 		},
 		{
 			"eventType": "block",
@@ -390,7 +444,7 @@
 				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "Sprite5",
-					"sid": 783369095651786,
+					"sid": 652679984627681,
 					"parameters": {
 						"object": "ram"
 					}
@@ -400,7 +454,7 @@
 				{
 					"id": "set-enabled",
 					"objectClass": "ram",
-					"sid": 477413448138235,
+					"sid": 925448286034731,
 					"behaviorType": "Ancla",
 					"parameters": {
 						"state": "enabled"
@@ -409,7 +463,7 @@
 				{
 					"id": "pin-to-object-imagepoint",
 					"objectClass": "ram",
-					"sid": 649717580055295,
+					"sid": 517125685473076,
 					"behaviorType": "Pegado",
 					"parameters": {
 						"pin-to": "Sprite5",
@@ -421,7 +475,7 @@
 					}
 				}
 			],
-			"sid": 425413004002151
+			"sid": 680604143748239
 		},
 		{
 			"eventType": "block",
@@ -429,20 +483,20 @@
 				{
 					"id": "on-created",
 					"objectClass": "Sprite6",
-					"sid": 220759656136247
+					"sid": 447152533029004
 				}
 			],
 			"actions": [
 				{
 					"id": "set-visible",
 					"objectClass": "Sprite6",
-					"sid": 459804504048768,
+					"sid": 230347350122639,
 					"parameters": {
 						"visibility": "invisible"
 					}
 				}
 			],
-			"sid": 917458564453364
+			"sid": 300933684484561
 		},
 		{
 			"eventType": "block",
@@ -450,7 +504,7 @@
 				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "Sprite6",
-					"sid": 445450842630029,
+					"sid": 524438994008649,
 					"parameters": {
 						"object": "Gráfica"
 					}
@@ -459,8 +513,8 @@
 			"actions": [
 				{
 					"id": "set-enabled",
-					"objectClass": "ram",
-					"sid": 839464171399692,
+					"objectClass": "Gráfica",
+					"sid": 964620731163996,
 					"behaviorType": "Ancla",
 					"parameters": {
 						"state": "enabled"
@@ -469,7 +523,7 @@
 				{
 					"id": "pin-to-object-imagepoint",
 					"objectClass": "Gráfica",
-					"sid": 818875315382354,
+					"sid": 403397272891280,
 					"behaviorType": "Pegado",
 					"parameters": {
 						"pin-to": "Sprite6",
@@ -481,7 +535,7 @@
 					}
 				}
 			],
-			"sid": 228914594207810
+			"sid": 851034575396511
 		},
 		{
 			"eventType": "block",
@@ -489,20 +543,20 @@
 				{
 					"id": "on-created",
 					"objectClass": "Sprite7",
-					"sid": 766330506331102
+					"sid": 372943881973442
 				}
 			],
 			"actions": [
 				{
 					"id": "set-visible",
 					"objectClass": "Sprite7",
-					"sid": 647556103645031,
+					"sid": 231454239684439,
 					"parameters": {
 						"visibility": "invisible"
 					}
 				}
 			],
-			"sid": 818030297378025
+			"sid": 364513482872045
 		},
 		{
 			"eventType": "block",
@@ -510,7 +564,7 @@
 				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "Sprite7",
-					"sid": 744003484697723,
+					"sid": 463339220431683,
 					"parameters": {
 						"object": "FuenteDeAlimentación"
 					}
@@ -520,7 +574,7 @@
 				{
 					"id": "set-enabled",
 					"objectClass": "FuenteDeAlimentación",
-					"sid": 928895359659484,
+					"sid": 998443914252288,
 					"behaviorType": "Ancla",
 					"parameters": {
 						"state": "enabled"
@@ -529,7 +583,7 @@
 				{
 					"id": "pin-to-object-imagepoint",
 					"objectClass": "FuenteDeAlimentación",
-					"sid": 162427807794703,
+					"sid": 532374166537621,
 					"behaviorType": "Pegado",
 					"parameters": {
 						"pin-to": "Sprite7",
@@ -541,7 +595,7 @@
 					}
 				}
 			],
-			"sid": 593856623238636
+			"sid": 517468520454895
 		},
 		{
 			"eventType": "block",
@@ -549,20 +603,20 @@
 				{
 					"id": "on-created",
 					"objectClass": "Sprite8",
-					"sid": 264048824745588
+					"sid": 156836265192797
 				}
 			],
 			"actions": [
 				{
 					"id": "set-visible",
 					"objectClass": "Sprite8",
-					"sid": 396284084820658,
+					"sid": 913252987010140,
 					"parameters": {
 						"visibility": "invisible"
 					}
 				}
 			],
-			"sid": 346493942615288
+			"sid": 239456052504516
 		},
 		{
 			"eventType": "block",
@@ -570,7 +624,7 @@
 				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "Sprite8",
-					"sid": 436355235272044,
+					"sid": 767043023151479,
 					"parameters": {
 						"object": "ventilador"
 					}
@@ -580,7 +634,7 @@
 				{
 					"id": "set-enabled",
 					"objectClass": "ventilador",
-					"sid": 495192266121785,
+					"sid": 289555668414561,
 					"behaviorType": "Ancla",
 					"parameters": {
 						"state": "enabled"
@@ -589,7 +643,7 @@
 				{
 					"id": "pin-to-object-imagepoint",
 					"objectClass": "ventilador",
-					"sid": 647732407495195,
+					"sid": 862445402321172,
 					"behaviorType": "Pegado",
 					"parameters": {
 						"pin-to": "Sprite8",
@@ -601,28 +655,70 @@
 					}
 				}
 			],
-			"sid": 112435784094103
+			"sid": 176213450513707
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "while",
-					"objectClass": "System",
-					"sid": 962165554274647
+					"id": "on-created",
+					"objectClass": "BarraDeProgreso",
+					"sid": 672474849643641
 				}
 			],
 			"actions": [
 				{
-					"id": "set-text",
-					"objectClass": "Texto3",
-					"sid": 631731455313463,
+					"id": "set-maximum",
+					"objectClass": "BarraDeProgreso",
+					"sid": 573353822623433,
 					"parameters": {
-						"text": "Aciertos"
+						"maximum": "6"
 					}
 				}
 			],
-			"sid": 517643576831092
+			"sid": 516943150015406
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Texto8",
+					"sid": 766396444599339
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Texto8",
+					"sid": 518375508377978,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 718841921907819
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Sprite10",
+					"sid": 525542536080702
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite10",
+					"sid": 527518232901232,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 602300251336918
 		}
 	],
 	"sid": 315271682000412
