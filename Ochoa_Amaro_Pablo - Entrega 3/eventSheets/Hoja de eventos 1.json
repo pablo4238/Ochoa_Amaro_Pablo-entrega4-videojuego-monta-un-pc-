@@ -1,0 +1,629 @@
+{
+	"name": "Hoja de eventos 1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Aciertos",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 773679183904480
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "EntradaDeTexto",
+					"sid": 650920302489140,
+					"parameters": {
+						"text": "\"placa base\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "PlacaBase",
+					"sid": 703558661955662,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "PlacaBase",
+					"sid": 900034239836894,
+					"behaviorType": "Ancla",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 377093980558730,
+					"parameters": {
+						"variable": "Aciertos",
+						"value": "1"
+					}
+				},
+				{
+					"id": "stop-loop",
+					"objectClass": "System",
+					"sid": 727223736754235
+				}
+			],
+			"sid": 522079536797941
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "EntradaDeTexto6",
+					"sid": 169836060785680,
+					"parameters": {
+						"text": "\"procesador\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "procesador",
+					"sid": 726469297873598,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "procesador",
+					"sid": 940204324598180,
+					"behaviorType": "Ancla",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-progress",
+					"objectClass": "BarraDeProgreso",
+					"sid": 531188260735186,
+					"parameters": {
+						"value": "1"
+					}
+				}
+			],
+			"sid": 984690020051736
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "EntradaDeTexto5",
+					"sid": 413927067502262,
+					"parameters": {
+						"text": "\"ram\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "ram",
+					"sid": 104034222560884,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "ram",
+					"sid": 610652776669664,
+					"behaviorType": "Ancla",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 528697086859503
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "EntradaDeTexto4",
+					"sid": 418925425896551,
+					"parameters": {
+						"text": "\"gráfica\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Gráfica",
+					"sid": 278233103067915,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Gráfica",
+					"sid": 888400837822608,
+					"behaviorType": "Ancla",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 272975391664400
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "EntradaDeTexto2",
+					"sid": 389118452378032,
+					"parameters": {
+						"text": "\"fuente de alimentación\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "FuenteDeAlimentación",
+					"sid": 822049238527074,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "FuenteDeAlimentación",
+					"sid": 677153388594499,
+					"behaviorType": "Ancla",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 437203293384184
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "EntradaDeTexto3",
+					"sid": 464230385223998,
+					"parameters": {
+						"text": "\"ventilador\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "ventilador",
+					"sid": 623848474052313,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "ventilador",
+					"sid": 678046118502998,
+					"behaviorType": "Ancla",
+					"parameters": {
+						"state": "disabled"
+					}
+				}
+			],
+			"sid": 728003839530689
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Sprite2",
+					"sid": 667758530176797
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite2",
+					"sid": 358296304602819,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 237438217991668
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite2",
+					"sid": 654542310946491,
+					"parameters": {
+						"object": "PlacaBase"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "PlacaBase",
+					"sid": 693410162220498,
+					"behaviorType": "Ancla",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "PlacaBase",
+					"sid": 996070256762146,
+					"behaviorType": "Pegado",
+					"parameters": {
+						"pin-to": "Sprite2",
+						"image-point": "0",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 199845403375996
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Sprite4",
+					"sid": 798411711964357
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite4",
+					"sid": 659982771888536,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 452750365933781
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite4",
+					"sid": 892987032487509,
+					"parameters": {
+						"object": "procesador"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "procesador",
+					"sid": 169879789124613,
+					"behaviorType": "Ancla",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "procesador",
+					"sid": 345919984596658,
+					"behaviorType": "Pegado",
+					"parameters": {
+						"pin-to": "Sprite4",
+						"image-point": "0",
+						"angle": false,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 797614112167983
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Sprite5",
+					"sid": 161543522324668
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite5",
+					"sid": 216413350521892,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 980886123882962
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite5",
+					"sid": 783369095651786,
+					"parameters": {
+						"object": "ram"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "ram",
+					"sid": 477413448138235,
+					"behaviorType": "Ancla",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "ram",
+					"sid": 649717580055295,
+					"behaviorType": "Pegado",
+					"parameters": {
+						"pin-to": "Sprite5",
+						"image-point": "0",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 425413004002151
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Sprite6",
+					"sid": 220759656136247
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite6",
+					"sid": 459804504048768,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 917458564453364
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite6",
+					"sid": 445450842630029,
+					"parameters": {
+						"object": "Gráfica"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "ram",
+					"sid": 839464171399692,
+					"behaviorType": "Ancla",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "Gráfica",
+					"sid": 818875315382354,
+					"behaviorType": "Pegado",
+					"parameters": {
+						"pin-to": "Sprite6",
+						"image-point": "0",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 228914594207810
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Sprite7",
+					"sid": 766330506331102
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite7",
+					"sid": 647556103645031,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 818030297378025
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite7",
+					"sid": 744003484697723,
+					"parameters": {
+						"object": "FuenteDeAlimentación"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "FuenteDeAlimentación",
+					"sid": 928895359659484,
+					"behaviorType": "Ancla",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "FuenteDeAlimentación",
+					"sid": 162427807794703,
+					"behaviorType": "Pegado",
+					"parameters": {
+						"pin-to": "Sprite7",
+						"image-point": "0",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 593856623238636
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Sprite8",
+					"sid": 264048824745588
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite8",
+					"sid": 396284084820658,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 346493942615288
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite8",
+					"sid": 436355235272044,
+					"parameters": {
+						"object": "ventilador"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "ventilador",
+					"sid": 495192266121785,
+					"behaviorType": "Ancla",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "ventilador",
+					"sid": 647732407495195,
+					"behaviorType": "Pegado",
+					"parameters": {
+						"pin-to": "Sprite8",
+						"image-point": "0",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 112435784094103
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "while",
+					"objectClass": "System",
+					"sid": 962165554274647
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Texto3",
+					"sid": 631731455313463,
+					"parameters": {
+						"text": "Aciertos"
+					}
+				}
+			],
+			"sid": 517643576831092
+		}
+	],
+	"sid": 315271682000412
+}

@@ -1,0 +1,16 @@
+{
+	"name": "Texto1",
+	"plugin-id": "Text",
+	"sid": 943324873487897,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Pegado",
+			"sid": 474649574842767
+		}
+	],
+	"effectTypes": []
+}
