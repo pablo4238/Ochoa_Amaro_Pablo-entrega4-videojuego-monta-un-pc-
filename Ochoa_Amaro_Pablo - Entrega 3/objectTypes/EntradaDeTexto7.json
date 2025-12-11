@@ -1,17 +1,9 @@
 {
 	"name": "EntradaDeTexto7",
 	"plugin-id": "TextBox",
-	"sid": 508970658836796,
+	"sid": 837727709360464,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [
-		{
-			"name": "Variable1",
-			"type": "number",
-			"desc": "",
-			"show": true,
-			"sid": 753637901096134
-		}
-	],
+	"instanceVariables": [],
 	"behaviorTypes": []
 }

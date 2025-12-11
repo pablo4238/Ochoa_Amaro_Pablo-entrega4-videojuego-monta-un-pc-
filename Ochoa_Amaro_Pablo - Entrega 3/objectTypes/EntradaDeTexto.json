@@ -4,14 +4,6 @@
 	"sid": 424435601793061,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [
-		{
-			"name": "texto1",
-			"type": "boolean",
-			"desc": "",
-			"show": true,
-			"sid": 457625374981623
-		}
-	],
+	"instanceVariables": [],
 	"behaviorTypes": []
 }

@@ -1,18 +1,10 @@
 {
 	"name": "Texto3",
 	"plugin-id": "Text",
-	"sid": 154930291560047,
+	"sid": 267963023463070,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [
-		{
-			"name": "Variable1",
-			"type": "number",
-			"desc": "",
-			"show": true,
-			"sid": 114941768015010
-		}
-	],
+	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": []
 }
